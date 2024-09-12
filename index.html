@@ -1,0 +1,3626 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="s-maxage=3600">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/mediaQueries.css">
+    <title>Mi tienda</title>
+</head>
+
+<body>
+
+
+
+    <header class="header">
+
+        <nav class="nav container" id="nav">
+
+            <a href="index.html">
+                <img class="nav__logo" src="assets/vectores/logo.svg" alt="">
+            </a>
+
+            <div class="nav__icons">
+                <a href="#nav">
+                    <i class="fas fa-bars nav__open"></i>
+                </a>
+            
+                <a href="#">
+                    <i class="fas fa-times nav__close"></i>
+                </a>
+            </div>
+            
+            <ul class="nav__items">
+
+                <li class="nav__links">
+                    <a class="nav__link" href="#ofertas">Ofertas</a>
+                </li>
+
+                <li class="nav__links">
+                    <a class="nav__link" href="#productos">Productos</a>
+                </li>
+
+                
+                <li class="nav__links">
+                    <a class="nav__link" href="#productos">Testimonios</a>
+                </li>
+
+                
+                <li class="nav__links">
+                    <a class="nav__link" href="#ubicacion">Ubicacion</a>
+                </li>
+
+                <li class="nav__links">
+                    <a class="nav__link" href="#contacto">Contacto</a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <div class="header__text">
+            <h1 class="header__title">Fabricamos muebles en melamina de 18mm a medida, con los mejores precios y crédito semanal para comerciantes</h1>
+        </div>
+
+        <img class="header__arrow" src="assets/vectores/arrow.svg" alt="">
+
+        <img class="header__wave" src="assets/vectores/wave.svg" alt="">
+
+    </header>
+    <main>
+
+
+
+        <section class="ofertas splide" id="ofertas">
+
+            <h4 class="ofertas__title">Mirá estas ofertas</h4>
+           
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h4 class="oferta__title">Descuentos del 10% en maquilladores flotantes</h4>
+                        <img src="assets/imagenes/promo1.webp" alt="">
+                        <button class="oferta__button">➤ Quiero más informacion</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <h4 class="oferta__title">pingo hernandez</h4>
+                        <img src="assets/imagenes/promo2.webp" alt="">
+                        <button class="oferta__button">➤ Quiero más informacion</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <h4 class="oferta__title">la oferta del maquillador de 12 cajones y luces</h4>
+                        <img src="assets/imagenes/promo3.webp" alt="">
+                        <button class="oferta__button">➤ Quiero más informacion</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <h4 class="oferta__title">la oferta de espejos holywood</h4>
+                        <img src="assets/imagenes/promo4.webp" alt="">
+                        <button class="oferta__button">➤ Quiero más informacion</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <h4 class="oferta__title">la promocion de los espejos pie de reina</h4>
+                        <img src="assets/imagenes/promo5.webp" alt="">
+                        <button class="oferta__button">➤ Quiero más informacion</button>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+
+        </section>
+
+        <section class="productos" id="productos">
+
+
+            <h5 class="productos__title">Elige la categoria que estas buscando</h5>
+            <div class="filters">
+
+
+                <button class="filter-btn active" data-filter="all">
+                    <img class="cotegoria__icon" src="assets/vectores/iconTODO.svg" alt="">
+                    Todo</button>
+                <button class="filter-btn" data-filter="category1">
+                    <img class="cotegoria__icon" src="assets/vectores/iconCATEGORIA1.svg" alt="">
+                    Muebles Maquilladores</button>
+                <button class="filter-btn" data-filter="category2">
+                    <img class="cotegoria__icon" src="assets/vectores/iconCATEGORIA2.svg" alt="">
+                    Muebles pie de Reina</button>
+                <button class="filter-btn" data-filter="category3">
+                    <img class="cotegoria__icon" src="assets/vectores/iconCATEGORIA3.svg" alt="">
+                    Espejos Holywood</button>
+            </div>
+
+            <h5 class="productos__title2">Ó ingresa el nombre del mueble</h5>
+            <article class="busqueda">
+                <input class="busqueda__input" type="text" id="searchInput" placeholder="¿Qué buscas...?">
+                <ul id="suggestionsList" class="suggestions-list"></ul>
+            </article>
+
+            <div class="products" id="articulos">
+
+                <!-- --------------------- maquilladores -------------------------- -->
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 12 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma01.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 7 cajones y apoyo de vidrio</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma02.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 2 cajones y apoyo de vidrio</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma03.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma04.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma05.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma06.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma07.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma08.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma09.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma10.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma11.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma12.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma13.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma14.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma15.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma16.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma17.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma18.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma19.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma20.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma21.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma22.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma23.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma24.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category1">
+
+                    <h2 class="product__title">Maquillador con luces + 6 cajones y 4 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/maquilladores/ma25.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+
+
+                <!-- --------------------- Pie de reina -------------------------- -->
+
+
+
+                <div class="product category2">
+
+                    <h2 class="product__title">Mueble pie de reina + 3 cajones + y estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/PieReina/re01.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category2">
+
+                    <h2 class="product__title">Mueble pie de reina + 4 cajones + y 3 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/PieReina/re02.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category2">
+
+                    <h2 class="product__title">Mueble pie de reina + 4 cajones + y 3 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/PieReina/re03.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category2">
+
+                    <h2 class="product__title">Mueble pie de reina + 4 cajones + y 3 estantes</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/PieReina/re04.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+
+                <!-- --------------------- Holywood -------------------------- -->
+
+
+
+                <div class="product category3">
+
+                    <h2 class="product__title">Espejo Holywood con 11 luces</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/holywood/ho01.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category3">
+
+                    <h2 class="product__title">Espejo Holywood con 11 luces</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/holywood/ho02.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+                <div class="product category3">
+
+                    <h2 class="product__title">Espejo Holywood con 11 luces</h2>
+
+                    <!-- 
+                    <div class="product__descripcion">
+ 
+                        <div class="product__icons">
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconESPESOR.svg" alt="">
+                                <p class="product__icontext">Melamina espesor de 18mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconPATAS.svg" alt="">
+                                <p class="product__icontext">Patas de cedro 10mm</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconINCLINACION.svg" alt="">
+                                <p class="product__icontext">Estante con inclinación</p>
+                            </div>
+
+                            <div class="icons__container">
+                                <img class="product__icon" src="assets/vectores/iconVIDRIO.svg" alt="">
+                                <p class="product__icontext">Vidrio reforzado 4mm</p>
+                            </div>
+
+                        </div> 
+
+                    </div> -->
+
+                    <img class="img product__img" src="assets/imagenes/productos/holywood/ho03.webp" alt="">
+
+
+                    <div class="product__medidas">
+
+                        <!-- <h3 class="medidas__title">Medidas</h3> -->
+
+                        <div class="medidas__contenedor">
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconANCHO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ANCHO:</span>1,63mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconALTO.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">ALTO:</span>1,83mt</p>
+                            </div>
+
+                            <div class="medidas__container">
+                                <img class="medidas__icon" src="assets/vectores/iconPROFUNDIDAD.svg" alt="">
+                                <p class="medidas__text"><span class="medidas__span">PROF:</span>0,40mt</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product__precio">
+                        <h5 class="precio__text">Precio contado:</h5>
+                        <h4 class="precio__number">$190.000</h4>
+                    </div>
+
+                    <div class="product__cuotas">
+                        <!-- <h4 class="cuotas__title">Créditos a sola firma</h4> -->
+
+                        <div class="cuotas__container">
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">6 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                            <div class="cuotas__contenedor">
+                                <img class="cuotas__icon" src="assets/vectores/iconCUOTAS.svg" alt="">
+                                <h6 class="cuotas__text">3 semanas <br> de 69.670</h6>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product__cta btn-grad">
+                        <img class="whatsapp__icon2" src="assets/vectores/whatsapp_redondo.svg" alt="">
+                        Consultar</button>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <button class="productos__cta" id="loadMoreAll" style="display:none;">Cargar más</button>
+
+        </section>
+
+
+
+        <section class="testimonios">
+
+            <h3 class="testimonios__title">¿Qué dicen nuestros clientes?</h3>
+
+            <section class="testimony">
+
+                <div class="testimony__item">
+                    <h3 class="testimony__name">Martín Fernández</h3>
+                    <p class="testimony_review">"Compré un mueble a medida para mi local y no puedo estar más feliz con
+                        el resultado. La calidad es excelente, y lo mejor de todo es que me ofrecieron un plan de pago
+                        súper cómodo."</p>
+                    <div class="testimony__rate">
+                        <h5 class="testimony__calificacion">Calificación</h5>
+                        <img class="rate__stars" src="assets/vectores/stars.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="testimony__item">
+                    <h3 class="testimony__name">Lucía Pérez</h3>
+                    <p class="testimony_review">"Los muebles de melamina son de primera calidad. Además, el crédito
+                        personal que ofrecen es ideal para comerciantes como yo. Todo el proceso fue súper sencillo."
+                    </p>
+                    <div class="testimony__rate">
+                        <h5 class="testimony__calificacion">Calificación</h5>
+                        <img class="rate__stars" src="assets/vectores/stars.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="testimony__item">
+                    <h3 class="testimony__name">Joaquín González</h3>
+                    <p class="testimony_review">"El envío fue rápido y sin costo, justo lo que necesitaba. La atención
+                        al detalle en cada mueble es impresionante, ¡muy recomendable!"</p>
+                    <div class="testimony__rate">
+                        <h5 class="testimony__calificacion">Calificación</h5>
+                        <img class="rate__stars" src="assets/vectores/stars.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="testimony__item">
+                    <h3 class="testimony__name">Camila Rodríguez</h3>
+                    <p class="testimony_review">"Excelente servicio y atención. Me ayudaron a financiar mis muebles y
+                        ahora tengo mi local completamente amoblado a un precio increíble."</p>
+                    <div class="testimony__rate">
+                        <h5 class="testimony__calificacion">Calificación</h5>
+                        <img class="rate__stars" src="assets/vectores/stars.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="testimony__item">
+                    <h3 class="testimony__name">Santiago Álvarez</h3>
+                    <p class="testimony_review">"Encargué un mueble a medida y quedé impresionado con la rapidez y
+                        calidad. El crédito semanal es un gran alivio para pequeños comerciantes como yo."</p>
+                    <div class="testimony__rate">
+                        <h5 class="testimony__calificacion">Calificación</h5>
+                        <img class="rate__stars" src="assets/vectores/stars.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="testimony__item">
+                    <h3 class="testimony__name">Valentina Martínez</h3>
+                    <p class="testimony_review">"Son los mejores cuando se trata de muebles a medida. Cumplen con lo que
+                        prometen, y la financiación me permitió pagar cómodamente. ¡Estoy encantada con mi compra!"</p>
+                    <div class="testimony__rate">
+                        <h5 class="testimony__calificacion">Calificación</h5>
+                        <img class="rate__stars" src="assets/vectores/stars.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="testimony__item">
+                    <h3 class="testimony__name">Federico López</h3>
+                    <p class="testimony_review">"El mejor regalo que pude hacer para Reyes. Los muebles tienen una
+                        calidad espectacular y el hecho de que el envío sea gratis es una gran ventaja."</p>
+                    <div class="testimony__rate">
+                        <h5 class="testimony__calificacion">Calificación</h5>
+                        <img class="rate__stars" src="assets/vectores/stars.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="testimony__item">
+                    <h3 class="testimony__name">Sofía Ramírez</h3>
+                    <p class="testimony_review">"Me atendieron de maravilla. El mueble a medida quedó perfecto en mi
+                        negocio, y el plan de financiamiento es súper accesible. ¡Gracias!"</p>
+                    <div class="testimony__rate">
+                        <h5 class="testimony__calificacion">Calificación</h5>
+                        <img class="rate__stars" src="assets/vectores/stars.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="testimony__item">
+                    <h3 class="testimony__name">Tomás Herrera</h3>
+                    <p class="testimony_review">"Busqué muebles por toda la provincia y ellos fueron los únicos que me
+                        ofrecieron calidad a buen precio. Además, con el crédito, pude pagar por semana sin
+                        complicaciones."</p>
+                    <div class="testimony__rate">
+                        <h5 class="testimony__calificacion">Calificación</h5>
+                        <img class="rate__stars" src="assets/vectores/stars.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="testimony__item">
+                    <h3 class="testimony__name">Carolina Morales</h3>
+                    <p class="testimony_review">"El trato personalizado y los muebles a medida son increíbles. Lo mejor
+                        es que me ofrecieron financiación exclusiva para mi negocio. ¡Un lujo!"</p>
+                    <div class="testimony__rate">
+                        <h5 class="testimony__calificacion">Calificación</h5>
+                        <img class="rate__stars" src="assets/vectores/stars.svg" alt="">
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+
+
+
+
+        <section class="ubicacion" id="ubicacion">
+            <h4 class="ubicacion__title">¿Dónde estamos?</h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.0876738122856!2d-65.20664669999992!3d-26.8371636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d6dc2248763%3A0xd0fd743f18d52725!2sOficina!5e0!3m2!1ses-419!2sar!4v1709547697050!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a class="ubicacion__cta" href="https://maps.app.goo.gl/kzmMPWWSo8YhQu5M7">Ver ubicacion</a>
+        </section>
+
+
+
+
+<!-- 
+        <section class="correo" id="contacto">
+
+            <div class="correo__container">
+
+                <article class="correo__izquierda">
+
+                    <h4 class="correo__title">Contactanos</h4>
+
+                    <form class="correo__form" action="index.php" method="post">
+
+                        <input class="correo__input" type="text" id="name" name="name" placeholder="nombre" required>
+                        <input class="correo__input" type="email" id="email" name="email" placeholder="tu correo" required>
+                        <textarea class="correo__input correo__input--message" name="message" id="message"
+                            placeholder="tu mensaje" required></textarea>
+                        <input class="correo__cta" type="submit" id="enviar" name="enviar" value="enviar">
+
+                    </form>
+
+                </article>
+
+                <article class="correo__derecha">
+
+                    <h4 class="correodos__title">Si prefieres, tambien puedes contactarnos por whatsapp</h4>
+
+                    <a class="whatsapp__cta" href="#">
+                        <img class="whatsapp__icon" src="assets/vectores/whatsapp_redondo.svg" alt="">Enviar
+                        consulta</a>
+
+                    <h5 class="correo__horarios">
+                       <h5 class="horarios__dias">Lunes a Viernes</h5>
+                       <h5 class="horarios__horas">De 9:00 a 13hs y de 16:00 a 20:30hs</h5>
+                       <h5 class="horarios__dias">Sábados</h5>
+                       <h5 class="horarios__horas">De 9:00 a 13hs</h5>
+                    </h5>
+
+
+                </article>
+
+            </div>
+        </section> -->
+
+    </main>
+
+    <footer class="footer" id="redes">
+
+        <div class="footer__container">
+
+            <div class="footer__contenido">
+                <img class="footer__img" src="assets/vectores/logo.svg" alt="">
+                <div class="footer__grupo2">
+                    <h5 class="footer__text">Siguenos</h5>
+                    <div class="footer__icons">
+                        <img class="footer__icon" src="assets/vectores/facebook_redondo.svg" alt="">
+                        <img class="footer__icon" src="assets/vectores/instagram_redondo.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer__copy">
+                © 2024 'Jmaderas' - todos los derechos reservados - Innovación y calidad en cada pieza de madera
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="javascript/scripts.js"></script>
+</body>
+
+</html>
